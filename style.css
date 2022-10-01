@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #222;
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  font-size: 120%;
+}
+
+.hide{
+  display: none;
+}
+
+.card {
+  background: linear-gradient(45deg,
+  hsl(236, 74%, 66%),
+  hsl(234, 62%, 33%));
+  color: white;
+  padding: 2em;
+  margin-top: 30px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 2em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+.search-bar::placeholder{
+  color:  hsl(233, 16%, 69%);
+  font-style: italic;
+}
+
+button:hover {
+  background: #9999996b;
+  scale: 1.1;
+  transition: .2s ease-in-out;
+}
+
+h1 {
+  margin-bottom: 0.4em;
+}
+
+.movie.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.movie.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
