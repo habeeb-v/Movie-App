@@ -2,7 +2,7 @@ let movie = {
     apiKey : "30a6680f" ,
     fetchMovie : function (movie) {
         fetch(
-            "http://www.omdbapi.com/?t=" + movie + "&apikey=30a6680f"
+            "https://www.omdbapi.com/?t=" + movie + "&apikey=30a6680f"
         )
         .then((response) => {
             console.log(response);
